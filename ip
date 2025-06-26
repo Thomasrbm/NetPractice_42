@@ -1,0 +1,43 @@
+
+ip = 
+
+
+
+
+
+ip publique identifie un reseau.
+ip local pour identifier une machine niveau logique et savoir comment envoyer les donne selon si local ou distant. 
+masque = disivion reseau local. pour praticite.
+
+
+normalement tout est full auto ici on apprend donc tout manuel.
+
+
+
+a la fin en local switch passe par adresse MAC. mais pour savoir si use swithc ou routeur on check
+d abord ip avec protocol TCP
+
+
+
+
+Le kernel check l ip a qui il doit parler (ip et tcp inclu dans le pc) (http  dans le
+navigateur)  . il va use le tcp.
+
+si local =  ARP pour decode l ip en MAC (via switch)
+
+si non = envoit au routeur qui se debrouille (il lui dit juste le pc je veut x nom de domaine)
+
+
+
+
+
+
+Les reseau privees :
+
+
+
+
+127.0.0.   = localhost boucle locale. non routable pc lui meme
+
+
+

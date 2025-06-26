@@ -1,0 +1,236 @@
+
+
+
+Reseau = groupe de machine qui peuvent communiquer = recevoir envoyer donnees.
+
+
+Reseau prive = pareil mai avec limite d acces (fiewall / routeur ) 
+
+
+
+
+
+
+
+
+
+Internet = ensemble de noeuds (cable, emeteur radio wifi, machine qui font qu on peut communiquer)
+
+
+Switch/Commutateur : il centralise les infos et envoie au bon destinataire. (dans un reseau local)
+Sans ca les ordi n ont pas moyen de cibler directement 
+permet aussi de cabler plusier ethernet.
+Cest pas une fonction integree aux machine de bases.
+utilise adresse MAC
+
+
+==> switch manageable peuvent use ip 
+
+
+
+Modem : convertis les signaux physique en donne numeriques binaire  et inversement. communique
+surtout avec le FAI
+
+
+Routeur: Lieu entre 1 reseau et un autre ( pour internet par exemple). va chosir le meilleur chemin.
+il est la pour envoyer la donne et la recevoir sur la machine hote qui la demande.
+- Table de routage = 
+utilise et cree les IP locale
+
+
+Box : comine tout switchm modem etc.
+DHCP - dynamique hist config protocl ( pour donner les ip etc auto sur connexion local)
+
+
+
+NAT =  Network adresse translation  passe de privee a publique sur  l ip pour aller avec internet.
+pour avoir une adresse publique par foyer.
+
+
+
+
+
+
+FAI : fournisseur d acces a internet. on des routeurs puissant par lequel ton routeur passe.
+tu passer par leur reseau physiqye.  fournit une adress publique ( uniquae world wide ) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Interface :   couche logicielle qui va represente ta carte reseau (et donc ton adresse MAC)
+
+
+
+
+
+
+
+
+Nom de domaine = adresse lisible qui pointe vers une adresse publique.
+
+
+
+
+
+
+
+
+TCP : protocole de communication : handshake (comme ssh)  client envoye paquet SYN server repon avec 
+packet accuse de recpetion = pret a communiquer. decoupe l info en segment.
+TCP = integre a l OS.
+envoye par onde radio / elecrticte avec ethernet
+Intergres au pc : https://www.avast.com/fr-fr/c-what-is-tcp-ip#:~:text=TCP%2FIP%20est%20g%C3%A9n%C3%A9ralement%20int%C3%A9gr%C3%A9,connecter%20%C3%A0%20d'autres%20syst%C3%A8mes.
+
+Safe handshake
+
+
+http = parler au Back du serveur = couche aplication (contenu du message)
+
+Tcp = donner les infos a la bonne machine (facteur)
+
+ip = identifier les machine (adresse)
+
+wifi internet = couche physique 
+
+
+
+
+passe par le NAT qui souvre (chez la particulier) que si demande part de l interieur.
+
+
+
+
+
+
+
+
+
+
+Ip : adresse qui rpz une machine. sur un meme reseau elle DOIT etre unique pour bien id la machine.
+deux partie  Reseau a gauche, hote a droite. sur sur meme reseau peu communiquer.
+
+===> chiffre reseau = arbitraire.
+
+Ip local = ton reseau
+Ip public = dans le monde unique fournit par le FAI comrpise dans ta boxe
+
+IANA donne les plage d ip au FAI.
+
+
+
+
+Classes d ip:  nombre d hote C = 1 octet, B 2, A 3 = generalement A
+===> ENTIERREMENT CONFIGURABLE EN LOCAL.
+
+
+
+
+IP = sert  a identifier si reseau va etre local ou distant si besoin de routeur ou non.
+localisation entre plusieurs reseaux.
+
+si sur ip local va use switch puis mac
+
+SI en dehors reseau local va use routeur puis modem puis switch puis MAC
+
+
+
+Ip sert a savoir si local ou distant , MAC = reel adresse machine.
+SI local switch sinon routeur.
+
+
+
+
+
+
+
+
+Masque : (dhcp) 
+
+sert a segmenter son reseau local.  ex reseau eleve et reseau donnees sensible.
+dans maison = un seul masque
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Adresse MAC : identifie physiquement la machine.  (ip= logique et modifiable)
+Utilise par les switch 
+
+
+3 premier octet = constructeur
+3 autre = uniques
+
+comme ca chaque constructeur gere sa plage et est sur qu il a pas de doublon
+
+
+
+Le MAC ne sait rien de sa position sur le reseau il est juste la et unique.
+
+
+
+
+
+
+
+
+ARP ;  adresse resolution protocol.
+tu as envoyer depuis ton pc MAC vis switch puis routeur a ip distant (publique) . routeur l a recu
+mtn comment il sait a quel MAC l envoyer ?  
+
+l envoyeur a que l ip publique.
+
+
+
+
+
+
+
+
+
+
+Internet :  je comminque mon routeur retient qui demande a google
+google a ete auto config il redirige auto toujours sur le meme port il renvoit et ca revient sur ma 
+bonne machine car le routeur a stocke (table NAT)
+
+
+
+
+P2P & hole punching :  complex. 
+
+
+
+
+Discord :  complex aussi use du p2p et un serveur au middle.
+
+
+
+
+
+
+
+
+
+Serveur DNS : 
+
+

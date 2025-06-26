@@ -1,0 +1,56 @@
+
+
+6 :
+
+
+
+
+
+
+
+
+
+
+
+7 : 
+
+
+
+
+routeur entreux eux  et machines vers routeurs
+
+
+
+
+
+
+
+8 :
+
+
+ROUTES
+
+internet droit pointe vers R12
+
+
+sur R1 = prend ip gauche internet et met le / pour que tous le reseaux aie acces.
+	droite vers R21
+	
+
+R2 default vers R13
+
+
+
+
+
+TOUS EN  /28 
+
+
+
+
+9: 
+
+
+
+192.0  = 64 de 256
+/18 

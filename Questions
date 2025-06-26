@@ -1,0 +1,154 @@
+
+Interface :
+
+Point de connexion. 
+Une ip et une masque indiquant dans quel partie du reseau elle est.
+
+
+
+
+
+Ip : 
+
+internet protocol. facon d identifier une machine sur un reseau avec une adresse. ca rpz le pc
+ sur le reseau
+
+
+
+
+
+
+Masque : 
+
+c est ce qui permet de diviser un reseau en plusieur sous reseau.
+
+
+
+Et logique 
+
+Ip = partie reseau et parti hote.
+
+32 bit . notation CIDR plus clair.	
+
+1er adress id le reseau
+dernier le broadcast
+
+
+et logique
+
+
+
+
+
+
+
+
+
+Pourquoi des sous reseaux ? : 
+
+
+Normalement  sous reseau = Repartir le traffic.  securise donne sensible. Organise.
+Ici cest juste pour qu on apprenne
+
+
+
+Ici obligatoire avec routeur :
+
+Routeur sa connecte different reseau en ensemble.
+On l appel que si on sort du reseau pour aller sur un autre si sur meme reseau cest un switch.
+donc si sur meme reseau le routeur comprend pas que c est pour lui il fait rien.
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+Reseau privees ?
+
+Connexion internet
+
+
+
+
+
+
+
+
+
+
+
+TCP/IP : Transmission Control Protocol
+
+Handshake. division des paquet. verification de l envoi.
+
+
+
+
+
+
+
+
+
+
+	
+
+Les explcation du 6  au 10 de chaque mouv
+
+
+
+
+
+
+
+les routes :
+
+si l ip demander = pas sur le sous reseau alors utilise routeur
+
+
+default : 
+
+si tu sais pas ou envoyer envoit la.
+ici veut dire tout ip non sous reseaux va vers tel routeur.
+
+
+le saut :
+	vers la passerrelle , interface routeur
+
+
+
+
+
+
+
+
+
+
+Internet : 
+
+chiffre guache = envoit sur ce reseau
+
+droite interface par qui sa passe en premier.
+
+
+
+
+
+
+
+
+Reseau privees : 
+	adresse reseau auquel internet n a pas acces.
+	
+	10.0
+	172.16
+	192.168
+	
+	127 = local host

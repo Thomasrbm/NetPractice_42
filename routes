@@ -1,0 +1,30 @@
+
+
+
+
+Internet
+
+
+Gauche : machine cible ip + masque en CIDR
+
+Droite : ip interface routeur cible 
+
+
+
+
+
+
+Routeur :
+
+default
+
++ vers internet toujours lock
+
+
+
+
+Machine :
+
+default
+
+ip routeur cible interface
