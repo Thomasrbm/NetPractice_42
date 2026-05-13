@@ -13,6 +13,12 @@
 
 ---
 
+<p align="center"><i>Resolving networks</i></p>
+
+https://github.com/user-attachments/assets/07f239a9-7143-4870-8adc-bb3e40bf1e0a
+
+---
+
 ## Sommaire
 
 - [À propos](#à-propos)
